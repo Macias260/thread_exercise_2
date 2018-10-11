@@ -1,13 +1,19 @@
 package Macias260.training;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+
+public class App {
+    public static void main(String[] args) {
+        Car car = new Car("BMW");
+        Car car1 = new Car("AUDI");
+
+        Bridge bridge = new Bridge(car);
+        Bridge bridge1 = new Bridge(car1);
+
+
+        bridge.crossTheBridge();
+        bridge1.crossTheBridge();
+
+
+
     }
 }
